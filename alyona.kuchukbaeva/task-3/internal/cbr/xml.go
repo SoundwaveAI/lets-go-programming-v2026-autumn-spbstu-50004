@@ -11,9 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/net/html/charset"
-
 	"github.com/SoundwaveAI/task-3/internal/currency"
+	"golang.org/x/net/html/charset"
 )
 
 var (
