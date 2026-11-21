@@ -16,9 +16,9 @@ var (
 )
 
 type Rate struct {
-	NumCode  NumCode `xml:"NumCode" json:"num_code"`
-	CharCode string  `xml:"CharCode" json:"char_code"`
-	Value    Value   `xml:"Value" json:"value"`
+	NumCode  NumCode `json:"num_code"  xml:"NumCode"`
+	CharCode string  `json:"char_code" xml:"CharCode"`
+	Value    Value   `json:"value"     xml:"Value"`
 }
 
 type NumCode int
