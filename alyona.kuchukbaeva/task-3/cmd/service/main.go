@@ -10,13 +10,11 @@ import (
 	"github.com/SoundwaveAI/task-3/internal/storage"
 )
 
-func main() {
-	cfgPath := flag.String("config", "config.yaml", "path to YAML configuration file")
-	flag.Parse()
+const defaultConfigPath = "config.yaml"
 
-	if *cfgPath == "" {
-		panic("config file path must not be empty")
-	}
+func main() {
+	cfgPath := flag.String("config", defaultConfigPath, "path to YAML configuration file")
+	flag.Parse()
 
 	cfg, err := config.ParseFile(*cfgPath)
 	if err != nil {
